@@ -1,7 +1,33 @@
 body {
-    margin: 30px;
-    font-family: sans-serif;
-    text-align: center;
-    color: darkblue;
+  text-align: center;
 }
 
+.playAgain {
+  background-color: lightblue;
+  font-size: 50px;
+}
+
+.roundUpdates {
+  color: purple;
+  font-size: 36px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.points {
+  color: purple;
+  font-size: 36px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.winner {
+  color: hotpink;
+  font-size: 44px;
+  text-align: center;
+}
+
+#rock, #paper, #scissors {
+  background-color: lightgreen;
+  font-size: 35px;    
+}
