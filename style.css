@@ -25,7 +25,7 @@ body {
 }
 
 #rock {
-  background:url(./images/rock.png) no-repeat;
+  background:url(/images/rock.png) no-repeat;
   width: 300px;
   height: 300px;
   margin-right: 50px;
