@@ -9,25 +9,41 @@ body {
 
 .roundUpdates {
   color: purple;
-  font-size: 36px;
-  text-align: center;
+  font-size: 36px;  
   font-weight: bold;
 }
 
 .points {
   color: purple;
-  font-size: 36px;
-  text-align: center;
+  font-size: 36px;  
   font-weight: bold;
 }
 
 .winner {
   color: hotpink;
-  font-size: 44px;
-  text-align: center;
+  font-size: 44px;  
+}
+
+#rock {
+  background:url(./images/rock.png) no-repeat;
+  width: 300px;
+  height: 300px;
+  margin-right: 50px;
+}
+
+#paper {
+  background: url(./images/paper.png) no-repeat;
+  width: 300px;
+  height: 300px;  
+}
+
+#scissors {
+  background:url(./images/scissors.png) no-repeat;  
+  width: 300px;
+  height: 300px;
+  margin-left: 50px; 
 }
 
 #rock, #paper, #scissors {
-  background-color: lightgreen;
-  font-size: 35px;    
+  margin-top: 100px;
 }
