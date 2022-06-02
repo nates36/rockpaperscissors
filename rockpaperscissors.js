@@ -18,7 +18,7 @@ roundUpdates.classList.add('roundUpdates');
 
 const playAgain = document.createElement('button');
 playAgain.classList.add('playAgain');
-playAgain.innerHTML = 'Play Again or Reset';
+playAgain.innerHTML = 'PLAY AGAIN OR RESET';
 playAgain.addEventListener('click', () => {
   endGame();
 });
@@ -83,6 +83,14 @@ rockbutton.addEventListener('click', () => {
   }
 });
 
+rockbutton.addEventListener('mouseover', () => {
+  rockbutton.setAttribute('style', 'opacity:0.8;');
+});
+
+rockbutton.addEventListener('mouseout', () => {
+  rockbutton.setAttribute('style', 'opacity:1;');
+});
+
 paperbutton.addEventListener('click', () => {
   if (computerPlay() === 'Rock') {
     roundUpdates.textContent = 'you win this round!';
@@ -103,6 +111,14 @@ paperbutton.addEventListener('click', () => {
   }
 });
 
+paperbutton.addEventListener('mouseover', () => {
+  paperbutton.setAttribute('style', 'opacity:0.8;');
+});
+
+paperbutton.addEventListener('mouseout', () => {
+  paperbutton.setAttribute('style', 'opacity:1;');
+});
+
 scissorsbutton.addEventListener('click', () => {
   if (computerPlay() === 'Rock') {
     roundUpdates.textContent = 'computer wins this round!';
@@ -121,4 +137,20 @@ scissorsbutton.addEventListener('click', () => {
     winner.textContent = 'YOU WIN! THE HUMAN IS BETTER THAN THE MACHINE!';
     turnOffButtons();
   }
+});
+
+scissorsbutton.addEventListener('mouseover', () => {
+  scissorsbutton.setAttribute('style', 'opacity:0.8;');
+});
+
+scissorsbutton.addEventListener('mouseout', () => {
+  scissorsbutton.setAttribute('style', 'opacity:1;');
+});
+
+playAgain.addEventListener('mouseover', () => {
+  playAgain.setAttribute('style', 'background-color:darkgray;');
+});
+
+playAgain.addEventListener('mouseout', () => {
+  playAgain.setAttribute('style', 'background-color:lightgray;');
 });

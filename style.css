@@ -1,44 +1,52 @@
 body {
   text-align: center;
+  background-color: silver;
+}
+
+.logo {
+  max-width: 100px;  
 }
 
 .playAgain {
-  background-color: lightblue;
+  background-color: lightgray;
   font-size: 50px;
+  border-color: slategray;
+  padding: 10px 25px;
 }
 
 .roundUpdates {
-  color: purple;
+  color: black;
   font-size: 36px;  
   font-weight: bold;
 }
 
 .points {
-  color: purple;
+  color: black;
   font-size: 36px;  
   font-weight: bold;
 }
 
 .winner {
-  color: hotpink;
-  font-size: 44px;  
+  color: black;
+  font-size: 44px;
+  font-weight: bolder;
 }
 
 #rock {
-  background:url(images/rock.png) no-repeat;
+  background:url(./images/rock.png) no-repeat;
   width: 300px;
   height: 300px;
   margin-right: 50px;
 }
 
 #paper {
-  background: url(images/paper.png) no-repeat;
+  background: url(./images/paper.png) no-repeat;
   width: 300px;
   height: 300px;  
 }
 
 #scissors {
-  background:url(images/scissors.png) no-repeat;  
+  background:url(./images/scissors.png) no-repeat;  
   width: 300px;
   height: 300px;
   margin-left: 50px; 
@@ -46,4 +54,12 @@ body {
 
 #rock, #paper, #scissors {
   margin-top: 100px;
+  border-color: slategray;
+}
+
+.footer {
+  color: black;
+  font-weight: 1000;
+  font-size: 18px;
+  margin: 30px 30px;
 }
